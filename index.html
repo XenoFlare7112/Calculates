@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator 2025 - Calculate Income Tax & Net Pay | Free Tool</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Free tax calculator for 2025. Calculate your income tax, net pay, and social security contributions across multiple countries. Accurate and up-to-date tax rates.">
+    <meta name="keywords" content="tax calculator, income tax calculator, national insurance calculator, payroll calculator, net pay calculator, salary calculator, tax calculator UK, tax calculator USA, tax calculator Canada, tax calculator Germany, tax calculator Australia, tax calculator France, PAYE calculator, social security calculator, employer ni calculator, take home pay calculator, gross to net calculator, 2025 tax rates, 2024 tax rates, 2023 tax rates, student loan calculator, tax brackets, tax bands, CPP calculator, EI calculator, Medicare calculator, superannuation calculator, tax deductions, pension contributions, marriage allowance, blind allowance, federal tax calculator, state tax calculator, income tax rates, tax planning, payroll tax, employment tax, tax estimator, salary after tax, tax burden calculator, effective tax rate, marginal tax rate, how much money do i get, how do i work out my taxes, what is my take home pay, how much tax do i pay, calculate my salary, work out my wages, how much will I earn, what will i get paid, how much do i take home, how to calculate tax, how to work out national insurance, what is my net pay, how much tax will i pay, calculate take home salary, work out net income, how much money will i make, what is my gross to net, how do i calculate my wages, how much do i pay in tax, work out my take home pay, calculate my net salary, how do i work out take home pay, what will my salary be, how much will i get after tax, work out after tax salary, how to calculate net pay, how much money after tax, calculate wages after tax, work out my income, how do i calculate take home pay, what is my after tax income, how much will my paycheck be, calculate my after tax salary, how do i work out my net pay, what will i take home, how much do i get after deductions, calculate real salary, work out actual pay, how much money will i receive, what is my actual income, how do i calculate my net income, how much will i actually get, work out my real wages, calculate disposable income, how much spending money will i have, what can i afford, how much will i have left, calculate my budget, work out monthly take home, how much per month after tax, calculate weekly take home pay, work out daily net pay, how much do i get per week, calculate hourly take home, work out my spending power, how much can i spend, calculate living wage, work out cost of living, how much do i need to earn, what salary do i need, how much should i ask for, negotiate salary calculator, pay rise calculator, bonus tax calculator, overtime pay calculator, commission tax calculator, freelancer tax calculator, contractor tax calculator, self employed tax calculator, small business tax calculator, company car tax calculator, benefit in kind calculator, pension tax relief calculator, dividend tax calculator, capital gains tax calculator, inheritance tax calculator, tax refund calculator, tax rebate calculator, HMRC calculator, IRS calculator, CRA calculator, ATO calculator, tax office calculator">
+    <meta name="author" content="Global Tax Calculator">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="en">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Global Tax Calculator - Calculate Tax & NI for UK USA Canada Germany Australia">
+    <meta property="og:description" content="Free tax calculator with live currency rates. Calculate income tax, national insurance, net pay for 5 countries. Updated 2025 tax rates.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/667eea/ffffff?text=Global+Tax+Calculator">
+    <meta property="og:url" content="https://yourdomain.com/global-tax-calculator">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Global Tax Calculator - Free Online Tax & NI Calculator">
+    <meta name="twitter:description" content="Calculate your take-home pay and taxes for UK, USA, Canada, Germany & Australia. Free, accurate, updated for 2025.">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x600/667eea/ffffff?text=Global+Tax+Calculator">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Global Tax Calculator",
+        "description": "Free online tax calculator for multiple countries including UK, USA, Canada, Germany and Australia",
+        "url": "https://yourdomain.com/global-tax-calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Income Tax Calculator",
+            "National Insurance Calculator", 
+            "Net Pay Calculator",
+            "Multi-Country Support",
+            "Live Currency Conversion",
+            "2025 Tax Rates",
+            "Student Loan Calculator"
+        ],
+        "applicationSubCategory": "Tax Calculator"
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            color: #fff;
+            position: relative;
+            overflow-x: hidden;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) no-repeat center center fixed;
+            background-size: cover;
+            transition: background 1s ease-in-out;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            pointer-events: none;
+            z-index: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 120px 160px 40px 160px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #fff, #e0e0e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .globe-emoji {
+            font-size: 3.2rem;
+            display: inline-block;
+            margin-right: 15px;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+            background: none;
+            -webkit-background-clip: initial;
+            -webkit-text-fill-color: initial;
+            background-clip: initial;
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+
+        .calculator-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 30px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+        }
+
+        input, select {
+            padding: 16px 20px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        select option {
+            background: #764ba2;
+            color: white;
+            padding: 10px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+            height: 18px;
+            margin: 0;
+        }
+
+        .calculate-btn {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a52 100%);
+            color: white;
+            padding: 20px 50px;
+            border: none;
+            border-radius: 16px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .calculate-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
+            background: linear-gradient(135deg, #ff7979 0%, #eb4d4b 100%);
+        }
+
+        .results {
+            display: none;
+            margin-top: 40px;
+        }
+
+        .results h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .result-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .result-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .result-card h4 {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .result-card .amount {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .loading {
+            text-align: center;
+            opacity: 0.7;
+            margin: 20px 0;
+        }
+
+        .error {
+            color: #ff6b6b;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .calculator-card {
+                padding: 20px;
+                margin: 0 10px;
+            }
+            
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><span class="globe-emoji">🌍</span> TaxMate</h1>
+            <p>Calculate your net pay, taxes, and social security contributions across multiple countries</p>
+        </div>
+
+        <div class="calculator-card">
+            <form id="taxForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="country">📍 Select Your Country</label>
+                        <select id="country" required>
+                            <option value="">Choose a country...</option>
+                            <option value="UK">🇬🇧 United Kingdom</option>
+                            <option value="USA">🇺🇸 United States</option>
+                            <option value="Canada">🇨🇦 Canada</option>
+                            <option value="Germany">🇩🇪 Germany</option>
+                            <option value="Australia">🇦🇺 Australia</option>
+                            <option value="France">🇫🇷 France</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="taxYear">📅 Tax Year</label>
+                        <select id="taxYear" required>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025" selected>2025</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="annualSalary">💰 Annual Salary <span id="salaryLabel">(Local Currency)</span></label>
+                        <input type="number" id="annualSalary" placeholder="e.g., 50000" min="0" step="100" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deductions">📋 Tax Deductions</label>
+                        <input type="number" id="deductions" placeholder="e.g., 5000" min="0" step="100" value="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pension">🏦 Pension Contributions</label>
+                        <input type="number" id="pension" placeholder="e.g., 3000" min="0" step="100" value="0">
+                    </div>
+
+                    <div class="form-group" id="studentLoanGroup">
+                        <label for="studentLoan">🎓 Student Loan Plan</label>
+                        <select id="studentLoan">
+                            <option value="none">No Student Loan</option>
+                            <option value="plan1">Plan 1</option>
+                            <option value="plan2">Plan 2</option>
+                            <option value="plan4">Plan 4</option>
+                            <option value="plan5">Plan 5</option>
+                            <option value="postgrad">Postgraduate Loan</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="marriageAllowance">
+                        <label for="marriageAllowance">💑 Marriage Allowance (UK only)</label>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="blindAllowance">
+                        <label for="blindAllowance">👁️ Blind Person's Allowance (UK only)</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="calculate-btn">Calculate My Taxes</button>
+            </form>
+
+            <div class="loading" id="loading" style="display:none;">
+                <p>🔄 Fetching live exchange rates and calculating...</p>
+            </div>
+
+            <div class="error" id="error" style="display:none;"></div>
+        </div>
+
+        <div class="results" id="results">
+            <h2 id="resultsTitle">Your Tax Breakdown</h2>
+            <div class="results-grid" id="resultsGrid">
+                <!-- Results will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class GlobalTaxCalculator {
+            constructor() {
+                this.form = document.getElementById('taxForm');
+                this.loading = document.getElementById('loading');
+                this.error = document.getElementById('error');
+                this.results = document.getElementById('results');
+                this.resultsGrid = document.getElementById('resultsGrid');
+                this.resultsTitle = document.getElementById('resultsTitle');
+                
+                this.bindEvents();
+            }
+
+            bindEvents() {
+                this.form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    this.calculate();
+                });
+
+                document.getElementById('country').addEventListener('change', (e) => {
+                    this.toggleCountrySpecificFields(e.target.value);
+                    // Change background to match selected country
+                    if (e.target.value) {
+                        changeBackgroundForCountry(e.target.value);
+                    }
+                });
+            }
+
+            toggleCountrySpecificFields(country) {
+                const studentLoanGroup = document.getElementById('studentLoanGroup');
+                const marriageAllowance = document.getElementById('marriageAllowance');
+                const blindAllowance = document.getElementById('blindAllowance');
+                const salaryLabel = document.getElementById('salaryLabel');
+                
+                const currencyMap = {
+                    'UK': 'GBP (£)',
+                    'USA': 'USD ($)',
+                    'Canada': 'CAD ($)',
+                    'Germany': 'EUR (€)',
+                    'Australia': 'AUD ($)',
+                    'France': 'EUR (€)'
+                };
+
+                // Update salary label to show local currency
+                if (country && currencyMap[country]) {
+                    salaryLabel.textContent = `(${currencyMap[country]})`;
+                } else {
+                    salaryLabel.textContent = '(Local Currency)';
+                }
+
+                if (country === 'UK') {
+                    studentLoanGroup.style.display = 'block';
+                    marriageAllowance.parentElement.style.display = 'flex';
+                    blindAllowance.parentElement.style.display = 'flex';
+                } else {
+                    studentLoanGroup.style.display = 'none';
+                    marriageAllowance.parentElement.style.display = 'none';
+                    blindAllowance.parentElement.style.display = 'none';
+                }
+            }
+
+            async calculate() {
+                try {
+                    this.showLoading();
+                    this.hideError();
+                    this.hideResults();
+
+                    const formData = this.getFormData();
+                    const exchangeRate = await this.getExchangeRate(formData.country);
+                    const calculations = this.performCalculations(formData, exchangeRate);
+                    
+                    this.displayResults(calculations, formData);
+                    this.hideLoading();
+                    this.showResults();
+
+                } catch (error) {
+                    this.hideLoading();
+                    this.showError('Calculation failed. Please check your inputs and try again.');
+                    console.error('Calculation error:', error);
+                }
+            }
+
+            getFormData() {
+                return {
+                    country: document.getElementById('country').value,
+                    taxYear: document.getElementById('taxYear').value,
+                    annualSalary: parseFloat(document.getElementById('annualSalary').value) || 0,
+                    deductions: parseFloat(document.getElementById('deductions').value) || 0,
+                    pension: parseFloat(document.getElementById('pension').value) || 0,
+                    studentLoan: document.getElementById('studentLoan').value,
+                    marriageAllowance: document.getElementById('marriageAllowance').checked,
+                    blindAllowance: document.getElementById('blindAllowance').checked
+                };
+            }
+
+            async getExchangeRate(country) {
+                const currencyMap = {
+                    'UK': 'GBP',
+                    'USA': 'USD',
+                    'Canada': 'CAD',
+                    'Germany': 'EUR',
+                    'Australia': 'AUD',
+                    'France': 'EUR'
+                };
+
+                const targetCurrency = currencyMap[country];
+                
+                // Input is treated as local currency, so no conversion needed
+                return { rate: 1, currency: targetCurrency };
+            }
+
+            performCalculations(data, exchangeInfo) {
+                let calculations = {
+                    grossSalary: data.annualSalary,
+                    incomeTax: 0,
+                    socialContributions: 0,
+                    employerContributions: 0,
+                    nationalInsurance: 0,
+                    employerNationalInsurance: 0,
+                    studentLoanRepayment: 0,
+                    netPay: 0,
+                    totalEmployerCost: 0,
+                    currency: exchangeInfo.currency,
+                    exchangeRate: exchangeInfo.rate
+                };
+
+                // Calculate personal allowances
+                let personalAllowance = this.getPersonalAllowance(data);
+                let taxableIncome = Math.max(0, data.annualSalary - data.deductions - data.pension - personalAllowance);
+
+                // Country-specific calculations
+                switch (data.country) {
+                    case 'UK':
+                        calculations = this.calculateUK(calculations, data, taxableIncome);
+                        break;
+                    case 'USA':
+                        calculations = this.calculateUSA(calculations, data, taxableIncome);
+                        break;
+                    case 'Canada':
+                        calculations = this.calculateCanada(calculations, data, taxableIncome);
+                        break;
+                    case 'Germany':
+                        calculations = this.calculateGermany(calculations, data, taxableIncome);
+                        break;
+                    case 'Australia':
+                        calculations = this.calculateAustralia(calculations, data, taxableIncome);
+                        break;
+                    case 'France':
+                        calculations = this.calculateFrance(calculations, data, taxableIncome);
+                        break;
+                }
+
+                // Final calculations
+                calculations.netPay = calculations.grossSalary - calculations.incomeTax - calculations.socialContributions - calculations.studentLoanRepayment;
+                calculations.totalEmployerCost = calculations.grossSalary + calculations.employerContributions;
+
+                // Convert to local currency
+                this.convertToLocalCurrency(calculations, exchangeInfo.rate);
+
+                return calculations;
+            }
+
+            getPersonalAllowance(data) {
+                if (data.country === 'UK') {
+                    let allowance = data.taxYear === '2023' ? 12570 : 12570; // Updated for 2025
+                    if (data.blindAllowance) allowance += 2870;
+                    if (data.marriageAllowance) allowance += 1260;
+                    return allowance;
+                }
+                return 0;
+            }
+
+            calculateUK(calc, data, taxableIncome) {
+                // UK Income Tax 2025 rates
+                const brackets = data.taxYear === '2023' ? 
+                    { basic: 37700, higher: 125140 } : 
+                    { basic: 50270, higher: 125140 };
+
+                if (taxableIncome <= brackets.basic) {
+                    calc.incomeTax = taxableIncome * 0.20;
+                } else if (taxableIncome <= brackets.higher) {
+                    calc.incomeTax = (brackets.basic * 0.20) + ((taxableIncome - brackets.basic) * 0.40);
+                } else {
+                    calc.incomeTax = (brackets.basic * 0.20) + ((brackets.higher - brackets.basic) * 0.40) + ((taxableIncome - brackets.higher) * 0.45);
+                }
+
+                // Employee National Insurance (separate calculation)
+                const niThreshold = 12570;
+                const niUpperLimit = 50270;
+                if (calc.grossSalary > niThreshold) {
+                    if (calc.grossSalary <= niUpperLimit) {
+                        calc.nationalInsurance = (calc.grossSalary - niThreshold) * 0.12;
+                    } else {
+                        calc.nationalInsurance = ((niUpperLimit - niThreshold) * 0.12) + ((calc.grossSalary - niUpperLimit) * 0.02);
+                    }
+                    calc.socialContributions = calc.nationalInsurance;
+                }
+
+                // Employer National Insurance (separate calculation)
+                const employerNIThreshold = 9100;
+                if (calc.grossSalary > employerNIThreshold) {
+                    calc.employerNationalInsurance = (calc.grossSalary - employerNIThreshold) * 0.138;
+                    calc.employerContributions = calc.employerNationalInsurance;
+                }
+
+                // Student Loan
+                if (data.studentLoan !== 'none') {
+                    const thresholds = {
+                        'plan1': 22015, 'plan2': 27295, 'plan4': 27660, 
+                        'plan5': 25000, 'postgrad': 21000
+                    };
+                    const rates = {
+                        'plan1': 0.09, 'plan2': 0.09, 'plan4': 0.09, 
+                        'plan5': 0.09, 'postgrad': 0.06
+                    };
+                    
+                    const threshold = thresholds[data.studentLoan];
+                    if (calc.grossSalary > threshold) {
+                        calc.studentLoanRepayment = (calc.grossSalary - threshold) * rates[data.studentLoan];
+                    }
+                }
+
+                return calc;
+            }
+
+            calculateUSA(calc, data, taxableIncome) {
+                // Simplified US Federal Tax
+                if (taxableIncome <= 23200) {
+                    calc.incomeTax = taxableIncome * 0.12;
+                } else if (taxableIncome <= 94300) {
+                    calc.incomeTax = (23200 * 0.12) + ((taxableIncome - 23200) * 0.22);
+                } else {
+                    calc.incomeTax = (23200 * 0.12) + ((94300 - 23200) * 0.22) + ((taxableIncome - 94300) * 0.24);
+                }
+
+                // Social Security & Medicare
+                const socialSecurityCap = 160200;
+                if (calc.grossSalary <= socialSecurityCap) {
+                    calc.socialContributions += calc.grossSalary * 0.062; // Social Security employee
+                    calc.employerContributions += calc.grossSalary * 0.062; // Social Security employer
+                }
+                calc.socialContributions += calc.grossSalary * 0.0145; // Medicare employee
+                calc.employerContributions += calc.grossSalary * 0.0145; // Medicare employer
+
+                return calc;
+            }
+
+            calculateCanada(calc, data, taxableIncome) {
+                // Canadian Federal Tax
+                if (taxableIncome <= 55867) {
+                    calc.incomeTax = taxableIncome * 0.15;
+                } else {
+                    calc.incomeTax = (55867 * 0.15) + ((taxableIncome - 55867) * 0.205);
+                }
+
+                // CPP and EI
+                const maxCPP = 4038.40;
+                const maxEI = 1049.12;
+                
+                calc.socialContributions += Math.min(calc.grossSalary * 0.0595, maxCPP); // CPP
+                calc.socialContributions += Math.min(calc.grossSalary * 0.0163, maxEI); // EI
+                
+                calc.employerContributions += Math.min(calc.grossSalary * 0.0595, maxCPP); // CPP employer
+                calc.employerContributions += Math.min(calc.grossSalary * 0.0228, maxEI * 1.4); // EI employer
+
+                return calc;
+            }
+
+            calculateGermany(calc, data, taxableIncome) {
+                // Simplified German tax
+                calc.incomeTax = taxableIncome * 0.25;
+
+                // Social contributions (simplified)
+                const pensionRate = 0.093;
+                const healthRate = 0.073;
+                const unemploymentRate = 0.012;
+                const careRate = 0.0155;
+
+                const totalRate = pensionRate + healthRate + unemploymentRate + careRate;
+                calc.socialContributions = calc.grossSalary * totalRate;
+                calc.employerContributions = calc.grossSalary * totalRate;
+
+                return calc;
+            }
+
+            calculateAustralia(calc, data, taxableIncome) {
+                // Australian tax brackets
+                if (taxableIncome <= 18200) {
+                    calc.incomeTax = 0;
+                } else if (taxableIncome <= 45000) {
+                    calc.incomeTax = (taxableIncome - 18200) * 0.19;
+                } else if (taxableIncome <= 120000) {
+                    calc.incomeTax = ((45000 - 18200) * 0.19) + ((taxableIncome - 45000) * 0.325);
+                } else {
+                    calc.incomeTax = ((45000 - 18200) * 0.19) + ((120000 - 45000) * 0.325) + ((taxableIncome - 120000) * 0.37);
+                }
+
+                // Medicare Levy
+                if (calc.grossSalary > 23365) {
+                    calc.socialContributions = calc.grossSalary * 0.02;
+                }
+
+                // Superannuation (employer contribution)
+                calc.employerContributions = calc.grossSalary * 0.105; // 10.5%
+
+                return calc;
+            }
+
+            calculateFrance(calc, data, taxableIncome) {
+                // French tax (simplified progressive system)
+                const frRates = data.taxYear === '2023' ?
+                    { bracket1: 10777, bracket2: 27478, bracket3: 78570, rate1: 0.11, rate2: 0.30, rate3: 0.41, rate4: 0.45 } :
+                    { bracket1: 11294, bracket2: 28797, bracket3: 82341, rate1: 0.11, rate2: 0.30, rate3: 0.41, rate4: 0.45 };
+
+                if (taxableIncome <= frRates.bracket1) {
+                    calc.incomeTax = 0; // Tax-free allowance
+                } else if (taxableIncome <= frRates.bracket2) {
+                    calc.incomeTax = (taxableIncome - frRates.bracket1) * frRates.rate1;
+                } else if (taxableIncome <= frRates.bracket3) {
+                    calc.incomeTax = ((frRates.bracket2 - frRates.bracket1) * frRates.rate1) + ((taxableIncome - frRates.bracket2) * frRates.rate2);
+                } else {
+                    calc.incomeTax = ((frRates.bracket2 - frRates.bracket1) * frRates.rate1) + ((frRates.bracket3 - frRates.bracket2) * frRates.rate2) + ((taxableIncome - frRates.bracket3) * frRates.rate3);
+                }
+
+                // French social contributions (simplified)
+                calc.socialContributions = calc.grossSalary * 0.078; // Employee social contributions (health, unemployment, etc.)
+                calc.employerContributions = calc.grossSalary * 0.45; // Employer social charges (very high in France)
+
+                return calc;
+            }
+
+            convertToLocalCurrency(calculations, rate) {
+                calculations.grossSalaryConverted = calculations.grossSalary * rate;
+                calculations.incomeTaxConverted = calculations.incomeTax * rate;
+                calculations.socialContributionsConverted = calculations.socialContributions * rate;
+                calculations.employerContributionsConverted = calculations.employerContributions * rate;
+                calculations.nationalInsuranceConverted = (calculations.nationalInsurance || 0) * rate;
+                calculations.employerNationalInsuranceConverted = (calculations.employerNationalInsurance || 0) * rate;
+                calculations.studentLoanRepaymentConverted = calculations.studentLoanRepayment * rate;
+                calculations.netPayConverted = calculations.netPay * rate;
+                calculations.totalEmployerCostConverted = calculations.totalEmployerCost * rate;
+            }
+
+            displayResults(calc, data) {
+                const countryFlag = {
+                    'UK': '🇬🇧', 'USA': '🇺🇸', 'Canada': '🇨🇦', 
+                    'Germany': '🇩🇪', 'Australia': '🇦🇺', 'France': '🇫🇷'
+                }[data.country];
+
+                this.resultsTitle.textContent = `${countryFlag} ${data.country} Tax Breakdown (${data.taxYear})`;
+
+                const socialLabel = {
+                    'UK': '🛡️ National Insurance',
+                    'USA': '🏥 Social Security & Medicare',
+                    'Canada': '🍁 CPP & EI',
+                    'Germany': '🏥 Social Contributions',
+                    'Australia': '🏥 Medicare Levy',
+                    'France': '🇫🇷 Cotisations Sociales'
+                }[data.country];
+
+                const employerLabel = {
+                    'UK': '🏢 Employer NI',
+                    'USA': '🏢 Employer FICA',
+                    'Canada': '🏢 Employer CPP & EI',
+                    'Germany': '🏢 Employer Social Costs',
+                    'Australia': '🏢 Superannuation',
+                    'France': '🏢 Charges Patronales'
+                }[data.country];
+
+                let resultsHTML = `
+                    <div class="result-card">
+                        <h4>💰 Net Take-Home Pay</h4>
+                        <p class="amount">${calc.currency} ${this.formatNumber(calc.netPayConverted)}</p>
+                    </div>
+                    
+                    <div class="result-card">
+                        <h4>🏛️ Income Tax</h4>
+                        <p class="amount">${calc.currency} ${this.formatNumber(calc.incomeTaxConverted)}</p>
+                    </div>`;
+
+                // Show UK National Insurance separately if it's a UK calculation
+                if (data.country === 'UK' && calc.nationalInsurance > 0) {
+                    resultsHTML += `
+                        <div class="result-card">
+                            <h4>🛡️ National Insurance Tax</h4>
+                            <p class="amount">${calc.currency} ${this.formatNumber(calc.nationalInsuranceConverted)}</p>
+                        </div>`;
+                } else if (calc.socialContributions > 0) {
+                    resultsHTML += `
+                        <div class="result-card">
+                            <h4>${socialLabel}</h4>
+                            <p class="amount">${calc.currency} ${this.formatNumber(calc.socialContributionsConverted)}</p>
+                        </div>`;
+                }
+
+                // Show UK Employer National Insurance separately if it's a UK calculation
+                if (data.country === 'UK' && calc.employerNationalInsurance > 0) {
+                    resultsHTML += `
+                        <div class="result-card">
+                            <h4>🏢 Employers National Insurance Tax</h4>
+                            <p class="amount">${calc.currency} ${this.formatNumber(calc.employerNationalInsuranceConverted)}</p>
+                        </div>`;
+                } else if (calc.employerContributions > 0) {
+                    resultsHTML += `
+                        <div class="result-card">
+                            <h4>${employerLabel}</h4>
+                            <p class="amount">${calc.currency} ${this.formatNumber(calc.employerContributionsConverted)}</p>
+                        </div>`;
+                }
+
+                if (calc.studentLoanRepayment > 0) {
+                    resultsHTML += `
+                        <div class="result-card">
+                            <h4>🎓 Student Loan</h4>
+                            <p class="amount">${calc.currency} ${this.formatNumber(calc.studentLoanRepaymentConverted)}</p>
+                        </div>`;
+                }
+
+                resultsHTML += `
+                    <div class="result-card">
+                        <h4>💼 Total Employer Cost</h4>
+                        <p class="amount">${calc.currency} ${this.formatNumber(calc.totalEmployerCostConverted)}</p>
+                    </div>`;
+
+                this.resultsGrid.innerHTML = resultsHTML;
+            }
+
+            formatNumber(num) {
+                return new Intl.NumberFormat('en-US', {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                }).format(Math.round(num));
+            }
+
+            showLoading() {
+                this.loading.style.display = 'block';
+            }
+
+            hideLoading() {
+                this.loading.style.display = 'none';
+            }
+
+            showError(message) {
+                this.error.textContent = message;
+                this.error.style.display = 'block';
+            }
+
+            hideError() {
+                this.error.style.display = 'none';
+            }
+
+            showResults() {
+                this.results.style.display = 'block';
+                this.results.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            hideResults() {
+                this.results.style.display = 'none';
+            }
+        }
+
+        // Country-specific skyline backgrounds
+        function changeBackgroundForCountry(country) {
+            const skylines = {
+                'UK': [
+                    'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop', // London skyline
+                    'https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop', // London Bridge
+                    'https://images.unsplash.com/photo-1529655683826-aba9b3e77383?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop'  // London night
+                ],
+                'USA': [
+                    'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop', // NYC skyline
+                    'https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop', // NYC night
+                    'https://images.unsplash.com/photo-1541336032412-2048a678540d?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop'  // Manhattan
+                ],
+                'Canada': [
+                    'https://images.unsplash.com/photo-1517935706615-2717063c2225?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop', // Toronto skyline
+                    'https://images.unsplash.com/photo-1566843972142-a7fcb70de55a?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop', // Toronto night
+                    'https://images.unsplash.com/photo-1585009490919-4b5a89c0c70c?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop'  // Vancouver
+                ],
+                'Germany': [
+                    'https://images.unsplash.com/photo-1559564484-2c2c7d4aa3d1?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop', // Berlin skyline
+                    'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop', // Berlin night
+                    'https://images.unsplash.com/photo-1521295121783-8a321d551ad2?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop'  // Munich
+                ],
+                'Australia': [
+                    'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop', // Sydney Opera House
+                    'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop', // Sydney skyline
+                    'https://images.unsplash.com/photo-1562469238-5d66c02e4ac5?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop'  // Melbourne skyline
+                ],
+                'France': [
+                    'https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop', // Paris skyline with Eiffel Tower
+                    'https://images.unsplash.com/photo-1502602898536-47ad22581b52?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop', // Paris night
+                    'https://images.unsplash.com/photo-1524396309943-e03f5249f002?ixlib=rb-4.0.3&w=1920&h=1080&fit=crop'  // Paris evening
+                ]
+            };
+
+            const countryImages = skylines[country] || skylines['UK']; // Default to UK if country not found
+            const randomIndex = Math.floor(Math.random() * countryImages.length);
+            const selectedImage = countryImages[randomIndex];
+            
+            // Preload image to avoid flash
+            const img = new Image();
+            img.onload = function() {
+                document.body.style.background = `url('${selectedImage}') no-repeat center center fixed`;
+                document.body.style.backgroundSize = 'cover';
+            };
+            img.onerror = function() {
+                // Fallback to gradient if image fails
+                document.body.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+            };
+            img.src = selectedImage;
+        }
+
+        // Set initial background and change it when country changes
+        function setBackgroundForCountry() {
+            const selectedCountry = document.getElementById('country').value;
+            if (selectedCountry) {
+                changeBackgroundForCountry(selectedCountry);
+            } else {
+                // Default gradient if no country selected
+                document.body.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+            }
+        }
+
+        // Initialize the calculator when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            new GlobalTaxCalculator();
+            // Set initial gradient background
+            setBackgroundForCountry();
+        });
+    </script>
+</body>
+</html>
